@@ -112,6 +112,37 @@
             height: 48px;
             margin-bottom: 1rem;
         }
+
+        /* Ajustes para el footer */
+        footer {
+            background-color: #2d3748 !important; /* Un color oscuro pero no negro puro */
+        }
+
+        .footer-title {
+            color: #e2e8f0 !important; /* Color claro para títulos */
+            font-weight: 600;
+        }
+
+        .footer-text {
+            color: #cbd5e0 !important; /* Color más claro para texto normal */
+        }
+
+        .footer-list {
+            color: #cbd5e0 !important; /* Color para listas */
+        }
+
+        .footer-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-contact p {
+            color: #cbd5e0 !important; /* Color para información de contacto */
+        }
+
+        .footer-bottom {
+            color: #a0aec0 !important; /* Color más suave para el texto del copyright */
+            border-top: 1px solid #4a5568; /* Borde superior más visible */
+        }
     </style>
 </head>
 <body>
@@ -509,7 +540,7 @@
                             <i class="fas fa-phone-alt icon-large text-blue-custom mb-3"></i>
                             <h3 class="h5 fw-bold">Teléfono</h3>
                             <p class="text-muted mb-3">Llámanos las 24 horas</p>
-                            <span class="badge bg-blue-100 text-blue-custom border border-blue-custom">+1 (555) 123-4567</span>
+                            <span class="badge bg-blue-100 text-blue-custom border border-blue-custom">55 7730 5359</span>
                         </div>
                     </div>
                 </div>
@@ -555,7 +586,7 @@
                             <div class="text-center mb-4">
                                 <h3 class="card-title h2">Solicitar Servicio</h3>
                                 <p class="card-text text-muted">
-                                    Para solicitar nuestro servicio, puedes llamarnos directamente o enviar un email con los siguientes datos:
+                                    Para solicitar nuestro servicio, puedes llamarnos directamente o enviar un mensaje por WhatsApp con los siguientes datos:
                                 </p>
                             </div>
                             <div class="row">
@@ -587,7 +618,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="py-5">
         <div class="container py-4">
             <div class="row g-5">
                 <div class="col-lg-4">
@@ -598,17 +629,17 @@
                             <line x1="9" y1="9" x2="9.01" y2="9"></line>
                             <line x1="15" y1="9" x2="15.01" y2="9"></line>
                         </svg>
-                        <h3 class="h4 fw-bold mb-0">Patient Transport</h3>
+                        <h3 class="h4 fw-bold footer-title mb-0">Patient Transport</h3>
                     </div>
-                    <p class="text-muted">
+                    <p class="footer-text">
                         Brindamos servicios de transporte especializado con la máxima seguridad, 
                         comodidad y profesionalismo para personas que requieren asistencia adicional.
                     </p>
                 </div>
                 
                 <div class="col-lg-4">
-                    <h4 class="h5 fw-bold mb-3">Servicios</h4>
-                    <ul class="list-unstyled text-muted">
+                    <h4 class="h5 fw-bold footer-title mb-3">Servicios</h4>
+                    <ul class="list-unstyled footer-list">
                         <li class="mb-2">Transporte para discapacidades</li>
                         <li class="mb-2">Asistencia para adultos mayores</li>
                         <li class="mb-2">Servicio para embarazadas</li>
@@ -617,15 +648,15 @@
                 </div>
                 
                 <div class="col-lg-4">
-                    <h4 class="h5 fw-bold mb-3">Contacto</h4>
-                    <div class="text-muted">
+                    <h4 class="h5 fw-bold footer-title mb-3">Contacto</h4>
+                    <div class="footer-contact">
                         <p class="d-flex align-items-center mb-2">
                             <i class="fas fa-phone-alt text-info me-2"></i>
-                            55 7730 535
+                            <span class="footer-text">55 7730 535</span>
                         </p>
                         <p class="d-flex align-items-center">
                             <i class="fas fa-clock text-info me-2"></i>
-                            24/7 Disponible
+                            <span class="footer-text">24/7 Disponible</span>
                         </p>
                     </div>
                 </div>
@@ -633,7 +664,7 @@
             
             <hr class="my-4 bg-secondary">
             
-            <div class="text-center text-muted">
+            <div class="text-center footer-bottom">
                 <p class="mb-0">&copy; <span id="current-year"></span> Patient Transport. Todos los derechos reservados.</p>
             </div>
         </div>
